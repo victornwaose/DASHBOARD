@@ -20,7 +20,7 @@ const Topbar = () => {
                     <div className="topbarIconsContainer">
                         <Settings/>
                     </div>
-                    <img src="../" alt="avatar" className="topAvatar"/>
+                    <img src="./../images/me.jpg" alt="avatar" className="topAvatar"/>
                 </div>
             </div>
         </div>

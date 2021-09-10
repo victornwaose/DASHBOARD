@@ -55,6 +55,21 @@ const Sidebar = () => {
                       
                     </ul>
                 </div>
+                <div className="sidebarMenu">
+                    <h3 className="sidebarTitle">Staff</h3>
+                    <ul className="sidebarList">
+                        <li className="sidebarListItem  active">
+                            <BarChart className="sidebarIcon"/> Manage
+                        </li>
+                        <li className="sidebarListItem">
+                             <WorkOutline className="sidebarIcon"/> Analytics
+                        </li>
+                        <li className="sidebarListItem">
+                             <Report className="sidebarIcon"/> Reports
+                        </li>
+                      
+                    </ul>
+                </div>
             </div>
         </div>
     )

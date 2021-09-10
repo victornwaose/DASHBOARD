@@ -1,6 +1,4 @@
 .container {
   display: flex;
-}
-.other_pages {
-  flex: 4;
+  margin-top: 10px;
 }
