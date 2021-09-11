@@ -5,3 +5,59 @@
 -moz-box-shadow: 0px 0px 12px -10px rgba(0,0,0,0.75);
     padding: 20px;
 }
+.widgetLgTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+.widgetLgImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.widgetLgTable {
+   width: 100%;
+   border-spacing: 20px;
+} 
+.widgetLgTh {
+    text-align: left 
+}
+.widgetLgTh {
+
+}
+.widgetLgUser{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.widgetLgName  {
+    font-weight: 300;
+} 
+.widgetLgDate,.widgetLgAmount {
+    font-weight: 300;
+}
+.widgetLgAmount {
+
+}
+.widgetLgStatus {
+
+}
+.widgetLgButton {
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+}
+.widgetLgButton .Approved{
+    background-color:  #e5faf2;
+    color: rgb(57, 1 53, 57);
+}
+.widgetLgButton.Declined{
+    background-color:  #e0cacb;
+    color: #3bb077;
+}
+.widgetLgButton .Pending{
+    background-color:  #5d5f61;
+    color: #3bb077;
+}

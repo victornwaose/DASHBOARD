@@ -2,7 +2,12 @@ import React from 'react';
 import "./Widgets.css";
 
 const WidgetsSm = () => {
-    return (
+    const Button = ({type}) => {
+        return <button className={"widgetLgButton " + type}>{type}</button>
+    }
+
+
+    return ( 
         <div className="WidgetLg">
             <h3 className="widgetLgTitle">Latest Transaction</h3>
             <table className="widgetLgTable">
@@ -17,9 +22,36 @@ const WidgetsSm = () => {
                         <img  src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e" alt="img" className="widgetLgImg"/>
                         <span className="widgetLgName">Tobe Luka</span>
                     </td>
+                    <td className="widgetLgDate">2 Jun 2021</td>  
+                    <td className="widgetLgAmount">$123.00</td>
+                    <td className="widgetLgStatus"><Button type="Approved"/></td>
+                </tr>
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img  src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e" alt="img" className="widgetLgImg"/>
+                        <span className="widgetLgName">Tobe Luka</span>
+                    </td>
                     <td className="widgetLgDate">2 Jun 2021</td>
                     <td className="widgetLgAmount">$123.00</td>
-                    <td className="widgetLgStatus"><button></button></td>
+                    <td className="widgetLgStatus"><Button type="Pending"/></td>
+                </tr>
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img  src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e" alt="img" className="widgetLgImg"/>
+                        <span className="widgetLgName">Tobe Luka</span>
+                    </td>
+                    <td className="widgetLgDate">2 Jun 2021</td>
+                    <td className="widgetLgAmount">$123.00</td>
+                    <td className="widgetLgStatus"><Button type="Declined"/></td>
+                </tr>
+                <tr className="widgetLgTr">
+                    <td className="widgetLgUser">
+                        <img  src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e" alt="img" className="widgetLgImg"/>
+                        <span className="widgetLgName">Tobe Luka</span>
+                    </td>
+                    <td className="widgetLgDate">2 Jun 2021</td>
+                    <td className="widgetLgAmount">$123.00</td>
+                    <td className="widgetLgStatus"><Button type="Pending"/></td>
                 </tr>
             </table>
         </div>
