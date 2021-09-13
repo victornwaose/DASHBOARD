@@ -15,7 +15,7 @@ const Chart = ({title, data, dataKey, grid} ) => {
                     <Line type="monotone" dataKey={dataKey} stroke="#5550bd"/>
                     <Tooltip/>
                     {grid && <CartesianGrid stripe="#e0dfdf" strokeDasharray="5 5 "/>}
-                    <Legend/>
+                    
                 </LineChart>   
             </ResponsiveContainer>
         </div>
