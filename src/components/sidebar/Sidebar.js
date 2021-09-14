@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Sidebar.css";
 import {LineStyle, Timeline, TrendingUp, Person,Assessment, Storefront, AttachMoney,BarChart, MailOutline, DynamicFeed, ChatBubbleOutline, WorkOutline, Report } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = () => {
@@ -10,9 +11,11 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem  active">
+                    <Link to ="/">
+                         <li className="sidebarListItem  active">
                             <LineStyle className="sidebarIcon"/> Home
                         </li>
+                    </Link>
                         <li className="sidebarListItem">
                              <Timeline className="sidebarIcon"/> Analytics 
                         </li>
@@ -25,12 +28,16 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem  active">
+                        <Link to="/users">
+                             <li className="sidebarListItem  active">
                             <Person className="sidebarIcon"/> User
                         </li>
-                        <li className="sidebarListItem">
-                             <Storefront className="sidebarIcon"/> Product 
-                        </li>
+                        </Link>
+                        <Link to ="/products">
+                            <li className="sidebarListItem">
+                                <Storefront className="sidebarIcon"/> Product 
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                              <AttachMoney className="sidebarIcon"/> Transactions 
                         </li>
