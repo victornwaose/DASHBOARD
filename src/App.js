@@ -2,10 +2,10 @@ import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar.js";
 import Home from "./components/pages/home/Home.js";
 import "./App.css" ;
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 import UsersLists from "./components/pages/userslist/UsersList";
-import { RouterOutlined } from "@material-ui/icons";
 import User from "./components/pages/user/User.js";
+import NewUser from "./components/pages/newUser/NewUser";
 
 function App() {
   return ( 
@@ -22,7 +22,10 @@ function App() {
               </Route>
               <Route exact path="/user/:userId" >
                   <User />
-              </Route>   
+              </Route> 
+              <Route exact path="/newUser" >
+                  <NewUser />
+              </Route>  
             </Switch>
         </div>
     </Router>
