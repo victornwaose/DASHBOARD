@@ -7,9 +7,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.userTitle{
 
-}
 .userAddButton {
     width: 110px;
     padding: 10px;
@@ -37,4 +35,39 @@
     -moz-box-shadow: 0px 0px 12px -10px rgba(0,0,0,0.75);
     padding: 20px;
     margin-left: 20px;
+}
+.userShowImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.userTitle{
+
+}
+.userContainer{
+
+}
+.userShow{
+
+}
+.userShowTop {
+    display: flex;
+    align-items: center;
+}
+.userShowTopTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9px;
+}
+.userShowUsername {
+    font-weight: 600;
+}
+.userShowUserTitle {
+    font-weight: 300;
+}
+.userShowBottom{
+
+}
+.userUpdate {
+
 }
