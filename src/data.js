@@ -48,3 +48,67 @@
       "Active User": 1000,
     },
   ];
+   export const userRow =  [
+    { id: 1, 
+      userName:"jonsown", 
+      avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+      email:"jonsown@gmail.com" ,
+      status:"active",
+      transaction: "$120" 
+    },
+  { id: 2, 
+    userName:"jonsown", 
+    avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+    email:"jonsown@gmail.com" ,
+    status:"active",
+    transaction: "$120" 
+},
+{ id: 3, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+},  
+{ id: 4, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+}, 
+{ id: 5, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+}, 
+{ id: 6, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+}, 
+{ id: 7, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+}, 
+{ id: 8, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+}, 
+{ id: 9, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+}, 
+{ id: 10, userName:"jonsown", 
+  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
+  email:"jonsown@gmail.com" ,
+  status:"active",
+  transaction: "$120" 
+}, 
+  ];

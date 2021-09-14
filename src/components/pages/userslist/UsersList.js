@@ -1,11 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./UsersList.css";
 import { DataGrid } from '@material-ui/data-grid';
-
-
-
+import { DeleteOutline } from '@material-ui/icons';
+import { userRow } from '../../../data';
+import {Link} from "react-router-dom"
 
 const UsersList = () => {
+
+  const [data, setData] = useState(userRow);
+
+
+  const handleDelete =(id) => {
+    setData(data.filter(item=> item.id !== id))
+  } 
 
   const columns = [
     { field: 'id', headerName: 'ID', width: 90 },
@@ -39,38 +46,31 @@ const UsersList = () => {
     {
       field: 'transaction',
       headerName: 'transaction ',
-    
       width: 180,
     },
-  
-  ];
-  
-  const rows = [
-    { id: 1, 
-      userName:"jonsown", 
-      avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
-      email:"jonsown@gmail.com" ,
-      status:"active",
-      transaction: "$120" 
+    {
+      field: 'action',
+      headerName: 'Actions',
+      width: 180,
+      renderCell: (params) => {
+        return (
+            <div>
+            <Link to= {'/user/' + params.row.id} >
+                <button className="userListEdit">Edit</button>
+            </Link>
+                
+                <DeleteOutline className="userListDelete" onClick={()=> handleDelete(params.row.id) }/>
+            </div>
+        )
+      } 
     },
-  { id: 2, 
-    userName:"jonsown", 
-    avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
-    email:"jonsown@gmail.com" ,
-    status:"active",
-    transaction: "$120" 
-},
-{ id: 3, userName:"jonsown", 
-  avatar:"https://images.unsplash.com/photo-1503443207922-dff7d543fd0e", 
-  email:"jonsown@gmail.com" ,
-  status:"active",
-  transaction: "$120" 
-},  
   ];
+  
+
 
     return (
         <div className="userList">
-            <DataGrid rows={rows} columns= {columns} pageSize={5} checkboxSelection />
+            <DataGrid rows={data} disableSectionOnClick columns= {columns} pageSize={8} checkboxSelection />
         </div>
     )
 }

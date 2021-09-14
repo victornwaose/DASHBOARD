@@ -15,4 +15,19 @@
     object-fit: cover;
     border-radius: 50%;
     margin-right: 10px;
+    cursor: pointer;
+}
+.userListEdit  {
+    border: none;
+    background-color: #0000ff;
+    color: #fff;
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.userListDelete {
+    color: #ff0000;
+    cursor: pointer;
 }
