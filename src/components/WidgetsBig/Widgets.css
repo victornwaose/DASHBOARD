@@ -23,9 +23,7 @@
 .widgetLgTh {
     text-align: left 
 }
-.widgetLgTh {
 
-}
 .widgetLgUser{
     display: flex;
     align-items: center;
@@ -37,12 +35,7 @@
 .widgetLgDate,.widgetLgAmount {
     font-weight: 300;
 }
-.widgetLgAmount {
 
-}
-.widgetLgStatus {
-
-}
 .widgetLgButton {
     padding: 5px 7px;
     border: none;
